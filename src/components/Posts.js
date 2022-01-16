@@ -10,7 +10,7 @@ const Posts = ({syncPosts}) => {
             </p>
         )
     }
-    return syncPosts.map(post => <Post post={post} key = {post}/>)
+    return syncPosts.map(post => <Post post={post} key = {post.id}/>)
 }
 
 const mapStateToProps = state => {
